@@ -27,6 +27,18 @@ typedef unsigned long long int u64;
 #define TRUE 1
 #define FALSE 0
 
+
+#ifdef _WIN32
+#elif __CYGWIN__
+#define _fseeki64 fseeko
+#define _ftelli64 ftello
+#else
+#define _fseeki64 fseeko64 
+#define _ftelli64 ftello64
+#endif
+
+
+
 //Align.
 #define ALIGN(x, a) (((x) + (a) - 1) & ~((a) - 1))
 
