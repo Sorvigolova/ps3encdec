@@ -38,7 +38,7 @@ optional arguments:
 										 sector count
 
 
-==> Command exaples <==
+==> Command examples <==
 
 ps3encdec -p -n 0x200 eid_root_key hdd.bin hdd.dec       // to decrypt 0x200 sectors of PS3 FAT hdd backup
 
